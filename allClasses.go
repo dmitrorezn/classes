@@ -36,6 +36,7 @@ type Service struct {
 type Announcement struct {
 	ID            primitive.ObjectID `json:"id" bson:"_id"`
 	IDString      string             `json:"idstr" bson:"_idstr"`
+	Title		  string             `json:"title" bson:"title"`
 	AuthorLogin   string             `json:"author_login" bson:"auth_login"`
 	Activity      Activity           `json:"activity" bson:"activity"`
 	UserRate      int                `json:"user_rate" bson:"user_rate"`
