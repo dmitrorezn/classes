@@ -5,7 +5,7 @@ import (
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"time"
 )
-git
+
 var mySigningKey = []byte("2secret3")
 
 type User struct {
