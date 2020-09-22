@@ -3,13 +3,12 @@ package classes
 import (
 	"github.com/dgrijalva/jwt-go"
 	"go.mongodb.org/mongo-driver/bson/primitive"
-	"gopkg.in/mgo.v2/bson"
 	"time"
 )
 
 var mySigningKey = []byte("2secret3")
 
-type obj bson.M
+
 
 type User struct {
 	ID             primitive.ObjectID `json:"id" bson:"_id"`
