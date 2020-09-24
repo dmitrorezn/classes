@@ -35,7 +35,7 @@ type Service struct {
 type Announcement struct {
 	ID            primitive.ObjectID `json:"id" bson:"_id"`
 	IDString      string             `json:"idstr" bson:"_idstr"`
-	Title		  string             `json:"title" bson:"title"`
+	Title		  string             `json:"anntitle" bson:"anntitle"`
 	AuthorLogin   string             `json:"author_login" bson:"auth_login"`
 	Activity      Activity           `json:"activity" bson:"activity"`
 	UserRate      int                `json:"user_rate" bson:"user_rate"`
@@ -43,10 +43,6 @@ type Announcement struct {
 	PhoneNumber   string             `json:"phone_number" bson:"phone_number"`
 	StartWeekDays []string           `json:"start_dates" bson:"start_dates"`
 	Comments      []Comment          `json:"comments" bson:"comments"`
-}
-
-func A()  {
-	
 }
 
 type Activity struct {
