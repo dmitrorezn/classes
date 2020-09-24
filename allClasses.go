@@ -45,6 +45,10 @@ type Announcement struct {
 	Comments      []Comment          `json:"comments" bson:"comments"`
 }
 
+func A()  {
+	
+}
+
 type Activity struct {
 	ID           primitive.ObjectID `json:"id" bson:"_id"`
 	AnnounsIDStr string             `json:"announsidstr" bson:"_announsidstr"`
