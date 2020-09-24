@@ -15,7 +15,6 @@ type User struct {
 	Username       string             `json:"username" bson:"username"`
 	Email          string             `json:"email" bson:"email"`
 	HashedPassword string             `json:"password" bson:"password"`
-	Order          Order              `json:"order" bson:"order"`
 	Status         string             `json:"status" bson:"status"`
 	//Status 	for              Admin 	 -> admin
 	//Status 	for      		 User	 -> user
@@ -57,6 +56,7 @@ type Activity struct {
 }
 
 type Order struct {
+	UserLogin  string     `json:"user_login" bson:"user_login"`
 	OrderList  []Activity `json:"order_list" bson:"order_list"`
 	TotalPrice float64    `json:"total_price" bson:"total_price"`
 }
