@@ -11,6 +11,7 @@ var mySigningKey = []byte("2secret3")
 type User struct {
 	ID             primitive.ObjectID `json:"id" bson:"_id"`
 	Username       string             `json:"username" bson:"username"`
+	TgUsername     string             `json:"tg_username" bson:"tg_username"`
 	Email          string             `json:"email" bson:"email"`
 	HashedPassword string             `json:"password" bson:"password"`
 	Status         string             `json:"status" bson:"status"`
